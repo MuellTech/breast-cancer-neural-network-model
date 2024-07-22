@@ -1,0 +1,52 @@
+On Windows powershell inside my VS code terminal
+to change directory, [cd ~/'location'] so in these case, if i want to change directory to my desktop
+# it will be cd ~/Desktop
+
+Now i can make a directory inside my current location and the command is [mkdir 'name of the folder']
+so assuming i want to create a folder called personalweb
+# it will be mkdir personalweb
+
+I can create files inside the directory/folder. eg i want to create a python file where i can code my snake game
+so the command is [code 'name of file']
+# it will be code snake.py
+
+now i will like to now use git to control this folder; so I will have to initialize a git local repository
+inside this directory  [git init]
+# it will be git init
+
+to see the files and folders inside our working directory i can use the command
+#[Get-ChildItem] or [ls]
+
+now initializing the working directory to become a git local repository is just an addition of a '.git' 
+file inside the working directory but when we use the ls or Get-ChildItem it doesn't show the .git file
+this is because the .git file is a hidden file and then command above can't show it
+
+so we will learn a new command to show hidden files
+# to see all files including hidden ones we use [Get-ChildItem -Force]
+# to see only the hidden files, we use [Get-ChildItem -Attrubutes Hidden]
+
+Now for me to actually start tracking the changes that happen to my file, I have to move it from the 
+working directory to the staging area. but then I can check wherether my files have been staged on not
+by using the command
+# git status 
+
+now you can add the file to the staging area to tract changes by using 
+# git add 'file name'  but if you will stage all files, the use 
+# git add .
+
+after doing all the stuff you wanna do, you can commit the files 
+# git commit 
+but professionally you have to add a commit message: usually the difference between the file from
+the last save point and the current version
+so we use the command
+# git commit -m "complete version 1"
+NB the commit message conventionally should be in present tense; and i used complete version 1 because
+there was no previous version of this my document. this is actually the first one.
+
+I can check the commits i have made using the command
+# git log
+
+
+
+
+
