@@ -10,7 +10,7 @@ I can create files inside the directory/folder. eg i want to create a python fil
 so the command is [code 'name of file']
 # it will be code snake.py
 
-now i will like to now use git to control this folder; so I will have to initialize a git local repository
+now i will like to use git to control this folder; so I will have to initialize a git local repository
 inside this directory  [git init]
 # it will be git init
 
@@ -45,3 +45,11 @@ there was no previous version of this my document. this is actually the first on
 
 I can check the commits i have made using the command
 # git log
+
+# the git log command will display the details of the commit including the person, email time and other stuff
+the most important info here is that, the commit returns a hash which is a fixed-size string generated from
+the input data and it's unique to each commit
+
+so if we want to the difference between our last checkpoint of a file and it's current status, 
+# git diff 'file name'
+
