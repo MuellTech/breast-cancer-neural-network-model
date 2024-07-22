@@ -45,8 +45,3 @@ there was no previous version of this my document. this is actually the first on
 
 I can check the commits i have made using the command
 # git log
-
-
-
-
-
